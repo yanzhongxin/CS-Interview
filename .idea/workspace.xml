@@ -19,14 +19,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a882cfd3-ab5c-4231-9f8b-94e21b971041" name="Default Changelist" comment="测试新的IDEA">
-      <change afterPath="$PROJECT_DIR$/out/src/Python/常见Python语法问题.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/src/高并发/1推荐书籍.md" afterDir="false" />
+    <list default="true" id="a882cfd3-ab5c-4231-9f8b-94e21b971041" name="Default Changelist" comment="创建python学习相关文件">
+      <change afterPath="$PROJECT_DIR$/out/src/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/高并发/2-1并发底层实现之volatile.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/高并发/2-2并发底层实现之synchronizedee.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,22 +53,70 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/src/高并发" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\downloadFile\IDEA\CS-Interview\out\src\高并发\imgs\第二章" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\downloadFile\IDEA\CS-Interview\out\src\高并发" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="JZ1数组中重复的数字" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="swordOffer.数组.JZ1数组中重复的数字" />
+      <module name="面试" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="swordOffer.数组.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="面试" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="面试" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.JZ1数组中重复的数字" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a882cfd3-ab5c-4231-9f8b-94e21b971041" name="Default Changelist" comment="" />
@@ -68,7 +126,12 @@
       <updated>1603456845667</updated>
       <workItem from="1603456847797" duration="1023000" />
       <workItem from="1603512378650" duration="321000" />
-      <workItem from="1603512840506" duration="393000" />
+      <workItem from="1603512840506" duration="632000" />
+      <workItem from="1603522144399" duration="1786000" />
+      <workItem from="1603524384807" duration="240000" />
+      <workItem from="1603524646018" duration="571000" />
+      <workItem from="1603526195877" duration="6312000" />
+      <workItem from="1603538960484" duration="7068000" />
     </task>
     <task id="LOCAL-00001" summary="测试新的IDEA">
       <created>1603456942130</created>
@@ -77,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603456942130</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="创建python学习相关文件">
+      <created>1603513444920</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603513444920</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,24 +167,57 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="测试新的IDEA" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试新的IDEA" />
+    <MESSAGE value="创建python学习相关文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建python学习相关文件" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="394" y="337" width="544" height="204" key="#Custom_Plugin_Repositories" timestamp="1603524681272">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="394" y="337" width="544" height="204" key="#Custom_Plugin_Repositories/0.0.1600.860@0.0.1600.860" timestamp="1603524681272" />
+    <state x="711" y="140" width="729" height="567" key="#HTTP_Proxy" timestamp="1603525159640">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="711" y="140" width="729" height="567" key="#HTTP_Proxy/0.0.1600.860@0.0.1600.860" timestamp="1603525159640" />
     <state x="392" y="70" key="#Plugins" timestamp="1603512898857">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="70" key="#Plugins/0.0.1600.860@0.0.1600.860" timestamp="1603512898857" />
-    <state x="545" y="229" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603512546175">
+    <state x="545" y="229" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603526277527">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="545" y="229" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1603512546175" />
-    <state x="206" y="61" width="1196" height="738" key="SettingsEditor" timestamp="1603512980391">
+    <state x="545" y="229" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1603526277527" />
+    <state width="1556" height="123" key="GridCell.Tab.0.bottom" timestamp="1603533333375">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="206" y="61" width="1196" height="738" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1603512980391" />
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1603456950233">
+    <state width="1556" height="123" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1603533333375" />
+    <state width="1556" height="123" key="GridCell.Tab.0.center" timestamp="1603533333374">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1603456950233" />
+    <state width="1556" height="123" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1603533333374" />
+    <state width="1556" height="123" key="GridCell.Tab.0.left" timestamp="1603533333374">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="123" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1603533333374" />
+    <state width="1556" height="123" key="GridCell.Tab.0.right" timestamp="1603533333375">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1556" height="123" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1603533333375" />
+    <state x="214" y="98" width="1196" height="762" key="SettingsEditor" timestamp="1603528014984">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="214" y="98" width="1196" height="762" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1603528014984" />
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1603513447304">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1603513447304" />
+    <state width="944" height="710" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1603528362429">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="944" height="710" key="com.intellij.byteCodeViewer.ShowByteCodeAction/0.0.1600.860@0.0.1600.860" timestamp="1603528362429" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1603543447713">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1603543447713" />
   </component>
 </project>
