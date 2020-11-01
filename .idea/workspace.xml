@@ -1,8 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8f17b446-9a9d-4c34-af35-b3bc752ad62e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/out/src/Python/机器学习/numpy入门/numpy入门.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/高并发/4-1 java并发编程基础知识.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/高并发/4-1 并发补充：四种引用和ThreadLocal.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/高并发/JavaThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/高并发/ThreadLocalDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/高并发/imgs/第四章/entryThradLocal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/高并发/imgs/第四章/弱引用.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/高并发/imgs/第四章/弱引用remove防止内存泄漏.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/高并发/imgs/第四章/弱引用防止内存泄漏.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/高并发/imgs/第四章/强引用.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/高并发/imgs/第四章/管道通信.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/高并发/imgs/第四章/虚引用.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/高并发/imgs/第四章/软引用.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/面试/Python/常见Python语法问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/面试/Python/常见Python语法问题.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/面试/java基础/markdown模板格式.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/面试/redis/redis数据结构sds源码解析.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/面试/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/面试/test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/面试/高并发/1推荐书籍.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/面试/高并发/1推荐书籍.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/面试/高并发/2-2-1并发底层实现之synchronized.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/面试/高并发/2-2-1并发底层实现之synchronized.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/面试/高并发/2-2-2synchronized补充自旋锁消除锁粗化.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/面试/高并发/2-2-2synchronized补充自旋锁消除锁粗化.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/面试/高并发/2-2并发底层实现之synchronizedee.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/src/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/src/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/src/高并发/3-1 java内存模型.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/src/高并发/3-1 java内存模型.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,15 +58,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>new String(value</find>
-      <find>concat(String</find>
-      <find>author</find>
-      <find>substring(</find>
-      <find>hash</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,34 +72,40 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/src/高并发/imgs/第四章" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\大学课件\springboot博客\CS-Interview\out\src\高并发\imgs\第四章" />
       <recent name="D:\大学课件\springboot博客\CS-Interview\out\src" />
       <recent name="D:\大学课件\springboot博客\CS-Interview\out\src\java基础" />
       <recent name="D:\大学课件\springboot博客\CS-Interview" />
       <recent name="D:\大学课件\springboot博客\CS-Interview\out" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\大学课件\springboot博客\CS-Interview\out\src\高并发\imgs\第四章" />
       <recent name="D:\大学课件\springboot博客\CS-Interview\out\src\高并发\imgs\第二章" />
       <recent name="D:\大学课件\springboot博客\CS-Interview\out\src\java基础\img" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JZ1数组中重复的数字">
-    <configuration name="JZ1数组中重复的数字" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="swordOffer.数组.JZ1数组中重复的数字" />
+  <component name="RunManager" selected="Application.ThreadLocalDemo">
+    <configuration name="JavaThreadDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="高并发.JavaThreadDemo" />
       <module name="面试" />
+      <option name="VM_PARAMETERS" value="-Xmx20M" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="swordOffer.数组.*" />
+          <option name="PATTERN" value="高并发.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <RunnerSettings RunnerId="Debug with VisualVM">
+        <option name="visualVMId" value="5309853111000" />
+      </RunnerSettings>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -77,6 +117,26 @@
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadLocalDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="高并发.ThreadLocalDemo" />
+      <module name="面试" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="高并发.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="面试" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -95,15 +155,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.JZ1数组中重复的数字" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.test" />
+      <item itemvalue="Application.JavaThreadDemo" />
+      <item itemvalue="Application.test (1)" />
+      <item itemvalue="Application.ThreadLocalDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ThreadLocalDemo" />
+        <item itemvalue="Application.JavaThreadDemo" />
+        <item itemvalue="Application.test (1)" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.JZ1数组中重复的数字" />
       </list>
     </recent_temporary>
   </component>
@@ -157,6 +221,14 @@
       <workItem from="1604045524682" duration="94000" />
       <workItem from="1604051212488" duration="13996000" />
       <workItem from="1604108953584" duration="8426000" />
+      <workItem from="1604127459427" duration="8035000" />
+      <workItem from="1604141308754" duration="1095000" />
+      <workItem from="1604142424249" duration="252000" />
+      <workItem from="1604142693936" duration="6658000" />
+      <workItem from="1604191561512" duration="696000" />
+      <workItem from="1604195575901" duration="8486000" />
+      <workItem from="1604213415875" duration="1738000" />
+      <workItem from="1604215796679" duration="8167000" />
     </task>
     <task id="LOCAL-00001" summary="first time git commit">
       <created>1595583006825</created>
@@ -221,7 +293,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603721054582</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="并发第三章jmm">
+      <created>1604127667360</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1604127667360</updated>
+    </task>
+    <task id="LOCAL-00011" summary="并发第三章jmm">
+      <created>1604127984323</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1604127984323</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +316,18 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first time git commit" />
     <MESSAGE value="新增markdown文件" />
@@ -237,41 +335,90 @@
     <MESSAGE value="最新提交" />
     <MESSAGE value="增加博客网址" />
     <MESSAGE value="新增了syn的锁消除，粗化，嵌套所，自旋锁" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增了syn的锁消除，粗化，嵌套所，自旋锁" />
+    <MESSAGE value="并发第三章jmm" />
+    <option name="LAST_COMMIT_MESSAGE" value="并发第三章jmm" />
   </component>
   <component name="WindowStateProjectService">
     <state x="261" y="0" key="#Plugins" timestamp="1604045348714">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="261" y="0" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1604045348714" />
-    <state width="738" height="116" key="GridCell.Tab.0.bottom" timestamp="1603784671620">
+    <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604202009984">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="738" height="116" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603784671620" />
-    <state width="738" height="116" key="GridCell.Tab.0.center" timestamp="1603784671620">
+    <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604202009984" />
+    <state x="423" y="196" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604197134210">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="738" height="116" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603784671620" />
-    <state width="738" height="116" key="GridCell.Tab.0.left" timestamp="1603784671620">
+    <state x="423" y="196" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1604197134210" />
+    <state x="313" y="0" key="CommitChangelistDialog2" timestamp="1604127982977">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="738" height="116" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603784671620" />
-    <state width="738" height="116" key="GridCell.Tab.0.right" timestamp="1603784671620">
+    <state x="313" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604127982977" />
+    <state width="712" height="306" key="GridCell.Tab.0.bottom" timestamp="1604226458052">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="738" height="116" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603784671620" />
-    <state x="153" y="0" key="SettingsEditor" timestamp="1604051814907">
+    <state width="712" height="306" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604226458052" />
+    <state width="712" height="306" key="GridCell.Tab.0.center" timestamp="1604226458052">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="153" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604051814907" />
+    <state width="712" height="306" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604226458052" />
+    <state width="712" height="306" key="GridCell.Tab.0.left" timestamp="1604226458052">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="712" height="306" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604226458052" />
+    <state width="712" height="306" key="GridCell.Tab.0.right" timestamp="1604226458052">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="712" height="306" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604226458052" />
+    <state width="712" height="306" key="GridCell.Tab.1.bottom" timestamp="1604226458052">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="712" height="306" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604226458052" />
+    <state width="712" height="306" key="GridCell.Tab.1.center" timestamp="1604226458052">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="712" height="306" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604226458052" />
+    <state width="712" height="306" key="GridCell.Tab.1.left" timestamp="1604226458052">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="712" height="306" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604226458052" />
+    <state width="712" height="306" key="GridCell.Tab.1.right" timestamp="1604226458052">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="712" height="306" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604226458052" />
+    <state x="134" y="84" width="1156" height="656" key="IDE.errors.dialog" timestamp="1604141133717">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="134" y="84" width="1156" height="656" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1604141133717" />
+    <state x="42" y="149" width="1187" height="592" key="MultipleFileMergeDialog" timestamp="1604127836799">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="42" y="149" width="1187" height="592" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1604127836799" />
+    <state x="72" y="0" key="SettingsEditor" timestamp="1604215853459">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="72" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604215853459" />
+    <state x="261" y="80" key="Vcs.Push.Dialog.v2" timestamp="1604127705952">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="261" y="80" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604127705952" />
+    <state x="543" y="307" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604128098901">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="543" y="307" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1604128098901" />
+    <state width="83" height="40" key="documentation.popup.size" timestamp="1604142466042">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="83" height="40" key="documentation.popup.size/0.0.1536.824@0.0.1536.824" timestamp="1604142466042" />
     <state x="341" y="183" key="run.anything.popup" timestamp="1604056498660">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="341" y="183" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1604056498660" />
-    <state x="347" y="0" width="840" height="1034" key="search.everywhere.popup" timestamp="1604118932947">
+    <state x="347" y="0" width="840" height="1034" key="search.everywhere.popup" timestamp="1604223202636">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="347" y="0" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604118932947" />
+    <state x="347" y="0" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604223202636" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -299,6 +446,11 @@
           <url>file://$PROJECT_DIR$/out/src/swordOffer/数组/JZ1数组中重复的数字.java</url>
           <line>54</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/out/src/高并发/ThreadLocalDemo.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/out/src/swordOffer/数组/JZ1数组中重复的数字.java</url>
