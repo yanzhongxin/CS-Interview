@@ -23,7 +23,7 @@ public class JavaThreadDemo {
 
 
         PhantomReference phantomReference=new PhantomReference(new OverFinalizeObject(), queue);
-        new Thread(()->{
+       /* new Thread(()->{
 
             while (true){
                 list.add(new byte[1024*1024]);//不断添加数据，导致堆内存溢出，发生gc,回收虚引用
@@ -50,7 +50,7 @@ public class JavaThreadDemo {
             Thread.sleep(500);
         }catch (Exception e){
             e.printStackTrace();
-        }
+        }*/
 
     }
 

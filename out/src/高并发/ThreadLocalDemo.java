@@ -18,16 +18,16 @@ public class ThreadLocalDemo {
 
         }).start();*/
 
-        new Thread(()->{
+       /* new Thread(()->{
             try {
                 Thread.sleep(500);
             }catch (Exception e){
 
             }
             Person p=new Person();
-            threadLocal.set();
+            ///threadLocal.set();
             System.out.println("t2 put "+p);
-        }).start();
+        }).start();*/
 
         System.in.read();
     }
