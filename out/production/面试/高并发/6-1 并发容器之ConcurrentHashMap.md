@@ -1,1 +1,10 @@
-# 涉及东西很多。
+
+
+
+# 面试题
+concurrenthashmap实现原理，加锁机制
+ConcurrentHashMap的put()为什么是线程安全的
+hashmap与 ConcurrentHashMap中扩容的区别
+ConcurrentHashMap 比 HashTable 效率要高？
+concurrentHashMap的底层里面对节点进行加锁的具体实现方式有过了解吗？
+concurrentHashMap里面的锁有没有使用到volatile

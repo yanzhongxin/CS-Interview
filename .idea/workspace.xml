@@ -22,41 +22,50 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f17b446-9a9d-4c34-af35-b3bc752ad62e" name="Default" comment="并发第三章jmm">
-      <change afterPath="$PROJECT_DIR$/out/src/容器/hashmap全解析/hashmap.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/src/容器/hashmap全解析/hashmap补充红黑树.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/src/高并发/5-1-1 Reentrantlock锁.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/src/高并发/5-1-2 ReentrantLock补充unsafe类(美团技术团队).md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/src/高并发/5-1-3 Reentrantlock面试相关.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/src/高并发/5-1-4 基于AQS的读写锁ReentrantReadWriteLock.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/src/高并发/5-1-5 AQS的基础LockSupport和Condition.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/src/高并发/6-1 并发容器之ConcurrentHashMap.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/src/高并发/7-1 java中Atomic原子操作类.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/src/高并发/AtomicReferenceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/src/高并发/UnsafeDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/src/高并发/imgs/第七章/atomicinteger.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/src/高并发/imgs/第五章/unsafe/虚幻引用在DirectByteBuffer引用.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_10_31_15_03__Default_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_10_31_15_03__Default_.xml" afterDir="false" />
+    <list default="true" id="8f17b446-9a9d-4c34-af35-b3bc752ad62e" name="Default" comment="测试">
+      <change afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/HashMapDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/hashmap补充红黑树.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/img/234树.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/img/234树节点删除对应红黑树规则.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/img/234树节点插入对应红黑树节点插入.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/img/234转换成红黑树.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/img/7hash数值高位运算.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/img/7hash数值高位运算2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/img/7版本扩容实例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/img/8版本扩容索引迁移图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/img/hashmap低位掩码加扰动函数实验.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/img/hashmap低位掩码加扰动函数实验2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/img/hashmap死循环1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/img/hashmap死循环2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/img/hashmap死循环3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/img/hollis关于扰动函数讲解1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/img/二叉查找树.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/img/右旋.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/img/左旋.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/img/经典红黑树.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/容器/hashmap全解析/HashMapDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/容器/hashmap全解析/img/234树.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/容器/hashmap全解析/img/234树节点删除对应红黑树规则.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/容器/hashmap全解析/img/234树节点插入对应红黑树节点插入.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/容器/hashmap全解析/img/234转换成红黑树.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/容器/hashmap全解析/img/7hash数值高位运算.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/容器/hashmap全解析/img/7hash数值高位运算2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/容器/hashmap全解析/img/7版本扩容实例.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/容器/hashmap全解析/img/8版本扩容索引迁移图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/容器/hashmap全解析/img/二叉查找树.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/容器/hashmap全解析/img/右旋.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/容器/hashmap全解析/img/左旋.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/容器/hashmap全解析/img/红黑树234树操作.drawio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/容器/hashmap全解析/img/经典红黑树.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/src/高并发/imgs/第六章/councurrenthashmap存储结构.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/面试/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/面试/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/面试/Python/pycharm快捷键.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/面试/Python/pycharm快捷键.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/面试/java基础/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/面试/java基础/test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/面试/swordOffer/数组/JZ1数组中重复的数字.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/面试/swordOffer/数组/JZ1数组中重复的数字.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/面试/swordOffer/数组/JZ4重建二叉树.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/面试/swordOffer/数组/JZ4重建二叉树.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/面试/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/面试/test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/面试/高并发/4-1 并发补充：四种引用和ThreadLocal.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/面试/高并发/4-1 并发补充：四种引用和ThreadLocal.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/面试/高并发/JavaThreadDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/面试/高并发/JavaThreadDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/面试/高并发/MyThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/面试/高并发/MyThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/面试/高并发/OverFinalizeObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/面试/高并发/OverFinalizeObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/面试/高并发/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/面试/高并发/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/面试/高并发/ReentrantLockDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/面试/高并发/ReentrantLockDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/面试/高并发/ThreadLocalDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/面试/高并发/ThreadLocalDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/Python/pycharm快捷键.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/src/Python/pycharm快捷键.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/src/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/高并发/JavaThreadDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/src/高并发/JavaThreadDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/高并发/ReentrantLockDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/src/高并发/ReentrantLockDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/高并发/ThreadLocalDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/src/高并发/ThreadLocalDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/hashmap.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/hashmap.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/面试/高并发/6-1 并发容器之ConcurrentHashMap.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/面试/高并发/6-1 并发容器之ConcurrentHashMap.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/src/容器/hashmap全解析/hashmap.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/src/容器/hashmap全解析/hashmap.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/src/容器/hashmap全解析/hashmap补充红黑树.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/src/容器/hashmap全解析/hashmap补充红黑树.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/src/容器/hashmap全解析/img/红黑树操作.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/面试/容器/hashmap全解析/img/红黑树234树操作.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/src/高并发/6-1 并发容器之ConcurrentHashMap.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/src/高并发/6-1 并发容器之ConcurrentHashMap.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,19 +92,19 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/src/高并发/imgs/第七章" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/src/容器/hashmap全解析/img" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\大学课件\springboot博客\CS-Interview\out\src\容器\hashmap全解析\img" />
       <recent name="D:\大学课件\springboot博客\CS-Interview\out\src\高并发\imgs\第七章" />
       <recent name="D:\大学课件\springboot博客\CS-Interview\out\src\高并发\imgs\第五章\unsafe" />
       <recent name="D:\大学课件\springboot博客\CS-Interview\out\src\高并发\imgs\第四章" />
       <recent name="D:\大学课件\springboot博客\CS-Interview\out\src\高并发\imgs\第二章" />
-      <recent name="D:\大学课件\springboot博客\CS-Interview\out\src\java基础\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\大学课件\springboot博客\CS-Interview\out\src\高并发" />
@@ -105,7 +114,7 @@
       <recent name="D:\大学课件\springboot博客\CS-Interview" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UnsafeDemo">
+  <component name="RunManager" selected="Application.HashMapDemo">
     <configuration name="AtomicReferenceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="高并发.AtomicReferenceTest" />
       <module name="面试" />
@@ -119,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReentrantLockDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="高并发.ReentrantLockDemo" />
+    <configuration name="HashMapDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="容器.hashmap全解析.HashMapDemo" />
       <module name="面试" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="高并发.*" />
+          <option name="PATTERN" value="容器.hashmap全解析.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,8 +141,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadLocalDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="高并发.ThreadLocalDemo" />
+    <configuration name="ReentrantLockDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="高并发.ReentrantLockDemo" />
       <module name="面试" />
       <extension name="coverage">
         <pattern>
@@ -166,19 +175,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ThreadLocalDemo" />
       <item itemvalue="Application.test (1)" />
       <item itemvalue="Application.ReentrantLockDemo" />
       <item itemvalue="Application.UnsafeDemo" />
       <item itemvalue="Application.AtomicReferenceTest" />
+      <item itemvalue="Application.HashMapDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HashMapDemo" />
         <item itemvalue="Application.UnsafeDemo" />
         <item itemvalue="Application.AtomicReferenceTest" />
         <item itemvalue="Application.ReentrantLockDemo" />
         <item itemvalue="Application.test (1)" />
-        <item itemvalue="Application.ThreadLocalDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +261,13 @@
       <workItem from="1604903435652" duration="8836000" />
       <workItem from="1604971477359" duration="3812000" />
       <workItem from="1605016721560" duration="340000" />
-      <workItem from="1605097208619" duration="2823000" />
+      <workItem from="1605097208619" duration="3666000" />
+      <workItem from="1605239312312" duration="28074000" />
+      <workItem from="1605317905983" duration="11849000" />
+      <workItem from="1605406638134" duration="2443000" />
+      <workItem from="1605513550382" duration="1477000" />
+      <workItem from="1605524290323" duration="349000" />
+      <workItem from="1605524804327" duration="679000" />
     </task>
     <task id="LOCAL-00001" summary="first time git commit">
       <created>1595583006825</created>
@@ -338,7 +353,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604233735309</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="测试">
+      <created>1605101573211</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1605101573211</updated>
+    </task>
+    <task id="LOCAL-00014" summary="测试">
+      <created>1605101720314</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1605101720315</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +396,8 @@
     <MESSAGE value="增加博客网址" />
     <MESSAGE value="新增了syn的锁消除，粗化，嵌套所，自旋锁" />
     <MESSAGE value="并发第三章jmm" />
-    <option name="LAST_COMMIT_MESSAGE" value="并发第三章jmm" />
+    <MESSAGE value="测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试" />
   </component>
   <component name="WindowStateProjectService">
     <state x="261" y="0" key="#Plugins" timestamp="1604045348714">
@@ -378,81 +408,90 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604202009984" />
-    <state x="511" y="257" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604813712048">
+    <state x="511" y="257" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605101660616">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
     <state x="423" y="196" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1604372970756" />
     <state x="507" y="257" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1842.1080@0.0.1842.1080" timestamp="1604669671198" />
-    <state x="511" y="257" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1857.1080@0.0.1857.1080" timestamp="1604813712048" />
+    <state x="511" y="257" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1857.1080@0.0.1857.1080" timestamp="1605101660616" />
+    <state x="686" y="186" key="#com.intellij.ide.util.MemberChooser" timestamp="1605266587489">
+      <screen x="0" y="0" width="1857" height="1080" />
+    </state>
+    <state x="686" y="186" key="#com.intellij.ide.util.MemberChooser/0.0.1857.1080@0.0.1857.1080" timestamp="1605266587488" />
+    <state x="593" y="226" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605243412000">
+      <screen x="0" y="0" width="1857" height="1080" />
+    </state>
+    <state x="593" y="226" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1857.1080@0.0.1857.1080" timestamp="1605243412000" />
     <state x="1015" y="346" width="607" height="611" key="#xdebugger.evaluate" timestamp="1604914481929">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
     <state x="392" y="140" width="607" height="611" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1604383360614" />
     <state x="354" y="192" key="#xdebugger.evaluate/0.0.1842.1080@0.0.1842.1080" timestamp="1604627688962" />
     <state x="1015" y="346" key="#xdebugger.evaluate/0.0.1857.1080@0.0.1857.1080" timestamp="1604914481929" />
-    <state x="174" y="0" width="1048" height="824" key="CommitChangelistDialog2" timestamp="1604233732181">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="210" y="0" width="1048" height="824" key="CommitChangelistDialog2" timestamp="1605101718675">
+      <screen x="0" y="0" width="1857" height="1080" />
     </state>
     <state x="174" y="0" width="1048" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604233732181" />
+    <state x="210" y="0" key="CommitChangelistDialog2/0.0.1857.1080@0.0.1857.1080" timestamp="1605101718675" />
     <state width="755" height="543" key="DebuggerActiveHint" timestamp="1604383240606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="755" height="543" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1604383240606" />
-    <state width="1804" height="183" key="GridCell.Tab.0.bottom" timestamp="1604922841698">
+    <state width="1804" height="256" key="GridCell.Tab.0.bottom" timestamp="1605336408757">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
     <state width="1483" height="146" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604384496067" />
     <state width="1789" height="155" key="GridCell.Tab.0.bottom/0.0.1842.1080@0.0.1842.1080" timestamp="1604755198671" />
-    <state width="1804" height="183" key="GridCell.Tab.0.bottom/0.0.1857.1080@0.0.1857.1080" timestamp="1604922841698" />
+    <state width="1804" height="256" key="GridCell.Tab.0.bottom/0.0.1857.1080@0.0.1857.1080" timestamp="1605336408757" />
     <state width="1483" height="146" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604391627717" />
-    <state width="1804" height="183" key="GridCell.Tab.0.center" timestamp="1604922841697">
+    <state width="1804" height="256" key="GridCell.Tab.0.center" timestamp="1605336408756">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
     <state width="1483" height="146" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604384496067" />
     <state width="1789" height="155" key="GridCell.Tab.0.center/0.0.1842.1080@0.0.1842.1080" timestamp="1604755198671" />
-    <state width="1804" height="183" key="GridCell.Tab.0.center/0.0.1857.1080@0.0.1857.1080" timestamp="1604922841697" />
+    <state width="1804" height="256" key="GridCell.Tab.0.center/0.0.1857.1080@0.0.1857.1080" timestamp="1605336408756" />
     <state width="1483" height="146" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604391627717" />
-    <state width="1804" height="183" key="GridCell.Tab.0.left" timestamp="1604922841697">
+    <state width="1804" height="256" key="GridCell.Tab.0.left" timestamp="1605336408756">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
     <state width="1483" height="146" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604384496067" />
     <state width="1789" height="155" key="GridCell.Tab.0.left/0.0.1842.1080@0.0.1842.1080" timestamp="1604755198671" />
-    <state width="1804" height="183" key="GridCell.Tab.0.left/0.0.1857.1080@0.0.1857.1080" timestamp="1604922841697" />
+    <state width="1804" height="256" key="GridCell.Tab.0.left/0.0.1857.1080@0.0.1857.1080" timestamp="1605336408756" />
     <state width="1483" height="146" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604391627716" />
-    <state width="1804" height="183" key="GridCell.Tab.0.right" timestamp="1604922841697">
+    <state width="1804" height="256" key="GridCell.Tab.0.right" timestamp="1605336408757">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
     <state width="1483" height="146" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604384496067" />
     <state width="1789" height="155" key="GridCell.Tab.0.right/0.0.1842.1080@0.0.1842.1080" timestamp="1604755198671" />
-    <state width="1804" height="183" key="GridCell.Tab.0.right/0.0.1857.1080@0.0.1857.1080" timestamp="1604922841697" />
+    <state width="1804" height="256" key="GridCell.Tab.0.right/0.0.1857.1080@0.0.1857.1080" timestamp="1605336408757" />
     <state width="1483" height="146" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604391627717" />
-    <state width="1804" height="183" key="GridCell.Tab.1.bottom" timestamp="1604922841698">
+    <state width="1804" height="366" key="GridCell.Tab.1.bottom" timestamp="1605276313063">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
     <state width="1483" height="146" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604384496068" />
     <state width="867" height="216" key="GridCell.Tab.1.bottom/0.0.1842.1080@0.0.1842.1080" timestamp="1604628416119" />
-    <state width="1804" height="183" key="GridCell.Tab.1.bottom/0.0.1857.1080@0.0.1857.1080" timestamp="1604922841698" />
+    <state width="1804" height="366" key="GridCell.Tab.1.bottom/0.0.1857.1080@0.0.1857.1080" timestamp="1605276313063" />
     <state width="1483" height="146" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604391627717" />
-    <state width="1804" height="183" key="GridCell.Tab.1.center" timestamp="1604922841698">
+    <state width="1804" height="366" key="GridCell.Tab.1.center" timestamp="1605276313063">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
     <state width="1483" height="146" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604384496068" />
     <state width="867" height="216" key="GridCell.Tab.1.center/0.0.1842.1080@0.0.1842.1080" timestamp="1604628416103" />
-    <state width="1804" height="183" key="GridCell.Tab.1.center/0.0.1857.1080@0.0.1857.1080" timestamp="1604922841698" />
+    <state width="1804" height="366" key="GridCell.Tab.1.center/0.0.1857.1080@0.0.1857.1080" timestamp="1605276313063" />
     <state width="1483" height="146" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604391627717" />
-    <state width="1804" height="183" key="GridCell.Tab.1.left" timestamp="1604922841698">
+    <state width="1804" height="366" key="GridCell.Tab.1.left" timestamp="1605276313062">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
     <state width="1483" height="146" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604384496068" />
     <state width="867" height="216" key="GridCell.Tab.1.left/0.0.1842.1080@0.0.1842.1080" timestamp="1604628416103" />
-    <state width="1804" height="183" key="GridCell.Tab.1.left/0.0.1857.1080@0.0.1857.1080" timestamp="1604922841698" />
+    <state width="1804" height="366" key="GridCell.Tab.1.left/0.0.1857.1080@0.0.1857.1080" timestamp="1605276313062" />
     <state width="1483" height="146" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604391627717" />
-    <state width="1804" height="183" key="GridCell.Tab.1.right" timestamp="1604922841698">
+    <state width="1804" height="366" key="GridCell.Tab.1.right" timestamp="1605276313063">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
     <state width="1483" height="146" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604384496068" />
     <state width="867" height="216" key="GridCell.Tab.1.right/0.0.1842.1080@0.0.1842.1080" timestamp="1604628416119" />
-    <state width="1804" height="183" key="GridCell.Tab.1.right/0.0.1857.1080@0.0.1857.1080" timestamp="1604922841698" />
+    <state width="1804" height="366" key="GridCell.Tab.1.right/0.0.1857.1080@0.0.1857.1080" timestamp="1605276313063" />
     <state width="1483" height="146" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604391627717" />
     <state x="134" y="84" width="1156" height="656" key="IDE.errors.dialog" timestamp="1604141133717">
       <screen x="0" y="0" width="1536" height="824" />
@@ -462,19 +501,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="42" y="149" width="1187" height="592" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1604127836799" />
-    <state x="87" y="0" width="1462" height="824" key="SettingsEditor" timestamp="1604921344777">
+    <state x="87" y="0" width="1452" height="883" key="SettingsEditor" timestamp="1605524824842">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
     <state x="72" y="0" width="1462" height="824" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604373693643" />
-    <state x="87" y="0" key="SettingsEditor/0.0.1857.1080@0.0.1857.1080" timestamp="1604921344777" />
-    <state x="261" y="80" key="Vcs.Push.Dialog.v2" timestamp="1604233803668">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="87" y="0" width="1452" height="883" key="SettingsEditor/0.0.1857.1080@0.0.1857.1080" timestamp="1605524824842" />
+    <state x="316" y="105" key="Vcs.Push.Dialog.v2" timestamp="1605101576976">
+      <screen x="0" y="0" width="1857" height="1080" />
     </state>
     <state x="261" y="80" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604233803668" />
-    <state x="543" y="307" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604128098901">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="316" y="105" key="Vcs.Push.Dialog.v2/0.0.1857.1080@0.0.1857.1080" timestamp="1605101576976" />
+    <state x="656" y="402" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605525844253">
+      <screen x="0" y="0" width="1857" height="1080" />
     </state>
     <state x="543" y="307" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1604128098901" />
+    <state x="656" y="402" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1857.1080@0.0.1857.1080" timestamp="1605525844253" />
     <state x="327" y="204" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1604914178030">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
@@ -483,16 +524,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="83" height="40" key="documentation.popup.size/0.0.1536.824@0.0.1536.824" timestamp="1604373349808" />
-    <state x="341" y="183" key="run.anything.popup" timestamp="1604056498660">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="412" y="240" key="run.anything.popup" timestamp="1605257092518">
+      <screen x="0" y="0" width="1857" height="1080" />
     </state>
     <state x="341" y="183" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1604056498660" />
-    <state x="418" y="0" width="1017" height="1356" key="search.everywhere.popup" timestamp="1604974146781">
+    <state x="412" y="240" key="run.anything.popup/0.0.1857.1080@0.0.1857.1080" timestamp="1605257092518" />
+    <state x="418" y="0" width="1017" height="1356" key="search.everywhere.popup" timestamp="1605324433890">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
     <state x="346" y="0" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604388281292" />
     <state x="415" y="0" width="1008" height="1356" key="search.everywhere.popup/0.0.1842.1080@0.0.1842.1080" timestamp="1604738783326" />
-    <state x="418" y="0" width="1017" height="1356" key="search.everywhere.popup/0.0.1857.1080@0.0.1857.1080" timestamp="1604974146781" />
+    <state x="418" y="0" width="1017" height="1356" key="search.everywhere.popup/0.0.1857.1080@0.0.1857.1080" timestamp="1605324433890" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

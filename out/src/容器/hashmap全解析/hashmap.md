@@ -89,6 +89,7 @@ Key的值为“hollischuang”，经过简单的获取hashcode后，得到的值
 就像我们用一个小桶装水，如果想装更多的水，就得换大水桶。我们分析下resize的源码，鉴于JDK1.8融入了红黑树，
 较复杂，为了便于理解我们仍然使用JDK1.7的代码，好理解一些，本质上区别不大，具体区别后文再说。
 
+
 ```java
 void resize(int newCapacity) {   //传入新的容量  
      Entry[] oldTable = table;    //引用扩容前的Entry数组  
@@ -127,6 +128,27 @@ void transfer(Entry[] newTable) {
     }  
 }
 ```
+
+下面举个例子说明下扩容过程。假设了我们的hash算法就是简单的用key mod 一下表的大小（也就是数组的长度）。
+其中的哈希桶数组table的size=2， 所以key = 3、7、5，put顺序依次为 5、7、3。在mod 2以后都冲突在table[1]这里了。
+这里假设负载因子 loadFactor=1，即当键值对的实际大小size 大于 table的实际大小时进行扩容。接下来的三个步骤是哈希桶数组 
+resize成4，然后所有的Node重新rehash的过程。
+
+![扩容实例](./img/7版本扩容实例.png)
+下面我们讲解下JDK1.8做了哪些优化。经过观测可以发现，我们使用的是2次幂的扩展(指长度扩为原来2倍)，所以，元素的位置要么是在原位置，
+要么是在原位置再移动2次幂的位置。看下图可以明白这句话的意思，n为table的长度，
+图（a）表示扩容前的key1和key2两种key确定索引位置的示例，图（b）表示扩容后key1和key2两种key确定索引位置的示例，
+其中hash1是key1对应的哈希与高位运算结果。 
+![7hash数值高位运算](./img/7hash数值高位运算.png)
+元素在重新计算hash之后，因为n变为2倍，那么n-1的mask范围在高位多1bit(红色)，因此新的index就会发生这样的变化： 
+![7hash数值高位运算](./img/7hash数值高位运算2.png)
+因此，我们在扩充HashMap的时候，不需要像JDK1.7的实现那样重新计算hash，只需要看看原来的hash值新增的那个bit是1还是0就好了，是0的话索引没变，是1的话索引变成“原索引+oldCap”，可以看看下图为16扩充为32的resize示意图： 
+![7hash数值高位运算](./img/8版本扩容索引迁移图.png)
+这个设计确实非常的巧妙，既省去了重新计算hash值的时间，而且同时，由于新增的1bit是0还是1可以认为是随机的，因此resize的过程，
+均匀的把之前的冲突的节点分散到新的bucket了。这一块就是JDK1.8新增的优化点。有一点注意区别，JDK1.7中rehash的时候，
+旧链表迁移新链表的时候，如果在新表的数组索引位置相同，则链表元素会倒置，但是从上图可以看出，JDK1.8不会倒置。
+
+
 ### hashmap并发扩容导致的死循环（jdk1.7头插法）
 多线程使用场景中，应该尽量避免使用线程不安全的HashMap，而使用线程安全的ConcurrentHashMap
 ```java
@@ -165,14 +187,200 @@ e.next = newTable[i] 导致 key(3).next 指向了 key(7)。注意：此时的key
 ![hashmap死循环1](./img/hashmap死循环3.png)
 于是，当我们用线程一调用map.get(11)时，悲剧就出现了——Infinite Loop。
 
+
+
 ### jdk1.8 hashmap尾插法避免死循环
+
+
 
 ### 如何检测到死循环
 链表如何确认存在循环，这里说了双指针
 
+## hashmap的put操作
+### jdk1.7的put操作
+1. 如果定位到的数组位置没有元素 就直接插入。
+2. 如果定位到的数组位置有元素，遍历以这个元素为头结点的链表，依次和插入的key比较，如果key相同就直接覆盖，不同就采用头插法插入元素。
+
+```java
+public V put(K key, V value)
+    if (table == EMPTY_TABLE) { 
+//初始化hashmap的的Entry数组table,大小是2的次方
+    inflateTable(threshold); 
+}  
+    if (key == null)
+//hashmap的key是null,插入到table[0]位置的拉链链表中
+        return putForNullKey(value);
+//hashcode经过四次扰动函数后得出的哈希值
+    int hash = hash(key);
+//i=hash & table.length-1
+    int i = indexFor(hash, table.length);
+//遍历table[i]位置的链表，查看是已经有存在key相同的节点。
+    for (Entry<K,V> e = table[i]; e != null; e = e.next) { // 先遍历
+        Object k;
+//key相同含义。这里e.hash==hash是提前校验，性能损耗远小于equals方法。hashcode不相等，equals一定不相等，hashcode相等的话，才进一步去检查equals
+        if (e.hash == hash && ((k = e.key) == key || key.equals(k))) {
+            V oldValue = e.value;
+            e.value = value;//取代已经存在的value
+            e.recordAccess(this);
+            return oldValue; 
+        }
+    }
+
+    modCount++;
+    //table[i]位置或者下面挂的链表没有找到，直接插入。
+    addEntry(hash, key, value, i);  // 再插入
+    return null;
+}
+// 节点插入到指定index位置。
+void addEntry(int hash, K key, V value, int bucketIndex) {
+//扩容条件：1、实际容量大于阈值。2、数组下标index位置已经存在元素
+        if ((size >= threshold) && (null != table[bucketIndex])) {
+            //两倍扩容
+            resize(2 * table.length);
+            hash = (null != key) ? hash(key) : 0;
+            //计算扩容后索引下标。bucketIndex=h & (length-1);
+            bucketIndex = indexFor(hash, table.length);
+        }
+        //头插法直接插入到table[bucketIndex]位置
+        createEntry(hash, key, value, bucketIndex);
+    }
+```
+
+## hashmap的get操作
+
+```java
+ public V get(Object key) {
+        if (key == null)
+//key=null，从table[0]位置对应的链表中查找
+            return getForNullKey();
+//key!=null，从getEntry方法中寻找节点
+        Entry<K,V> entry = getEntry(key);
+        return null == entry ? null : entry.getValue();
+    }
+
+final Entry<K,V> getEntry(Object key) {
+        if (size == 0) {
+            return null;
+        }
+        //计算hash是经过四次扰动后的hashcode
+        int hash = (key == null) ? 0 : hash(key);
+        //遍历hash所在的数组索引位置下的挂着的链表
+        for (Entry<K,V> e = table[indexFor(hash, table.length)];
+             e != null;
+             e = e.next) {
+            Object k;
+//这里e.hash==hash是提前校验，性能损耗远小于equals方法。hashcode不相等，equals一定不相等，hashcode相等的话，才进一步去检查equals
+            if (e.hash == hash &&
+                ((k = e.key) == key || (key != null && key.equals(k))))
+                return e;
+        }
+        return null;
+    }
+```
+
+## hashmap涉及到的hashcode和equals
+hashcode和equals都是Object类的方法，因此所有多项都具有。Object类的hashcode是由
+c++代码生成的，保证同一个对象多次执行hashcode时返回哈希值相同，hashcode存储在
+对象头中。Object的equals方法就是==判断。
+**hashCode的主要作用**是为了配合基于散列的集合一起正常运行,这样的散列集合包括HashSet、HashMap以及HashTable，提高在散列结构存储中查找的效率。
+
+hashCode()具有如下约定：
+1. 在Java应用程序程序执行期间，对于同一对象多次调用hashCode()方法时，其返回的哈希码是相同的，前提是将对象进行equals比较时所用的标尺信息未做修改。在Java应用程序的一次执行到另外一次执行，同一对象的hashCode()返回的哈希码无须保持一致；
+2. 如果两个对象相等（依据：调用equals()方法），那么这两个对象调用hashCode()返回的哈希码也必须相等；
+3. 反之，两个对象调用hasCode()返回的哈希码相等，这两个对象不一定相等。
+
+数学逻辑表示为：  ==   => 两个对象相等 <=>  equals()相等  => hashCode()相等。因此，重写equlas()方法必须重写hashCode()方法，以保证此逻辑严格成立，同时可以推理出：
+hasCode()不相等 => equals（）不相等 <=> 两个对象不相等。
+ 可能有人在此产生疑问：既然比较两个对象是否相等的唯一条件（也是充要条件）是equals，那么为什么还要弄出一个hashCode()，并且进行如此约定，弄得这么麻烦？
+其实，这主要体现在hashCode()方法的作用上，其主要用于增强哈希表的性能。以集合类中，以Set为例，当新加一个对象时，需要判断现有集合中是否已经存在与此对象相等的对象，
+如果没有hashCode()方法，需要将Set进行一次遍历，并逐一用equals()方法判断两个对象是否相等，此种算法时间复杂度为o(n)。通过借助于hasCode方法，
+先计算出即将新加入对象的哈希码，然后根据哈希算法计算出此对象的位置，直接判断此位置上是否已有对象即可。（注：Set的底层用的是Map的原理实现）
+对象的hashCode()返回的不是对象所在的物理内存地址。甚至也不一定是对象的逻辑地址，实现方式之一是对象内存地址转换成int数值。
+
+**hashcode与equals关系**
+1. 如果两个对象的equals相等，那么这两个对象返回的hashcode必须相等，反之不一定成立。
+2. 如果两个对象的hashcode相等，那么他们的equals不一定相等
+
+[重写equals方法时，为什么要重写hashcode](https://blog.csdn.net/qq_35868412/article/details/89380409 "fafsd")
+
+1. 提高效率。对象相等的充要条件是equals（判断性能损耗大于hashcode），使用hashcode方法提前校验，可以避免每一次比对都调用equals方法(hashcode不相等的对象，一定不相等，
+hashcode相等的对象才进一步用充要条件equals)，提高效率。比如hashmap中判断对象是否相等方法。e.hash == hash && ((k = e.key) == key || key.equals(k))
+2. 保证是同一个对象。如果重写了equals方法，而没有重写hashcode方法，会出现equals相等的对象，hashcode不相等的情况，重写hashcode方法就是为了避免这种情况的出现，确保
+equals方法放进hashmap之后能取出来。
+
+如果不重写hashcode会出现什么问题？**之前put进hashmap的数据get不到**
+```java
+import java.util.HashMap;
+
+public class Apple {
+    private String color;
+    public Apple(String color) {
+        this.color = color;
+    }
+    public boolean equals(Object obj) {//重写了equals方法
+        if(obj==null) return false;
+        if (!(obj instanceof Apple))
+            return false;   
+        if (obj == this)
+            return true;
+        return this.color.equals(((Apple) obj).color);
+    }
+    public static void main(String[] args) {
+        Apple a1 = new Apple("green");
+        Apple a2 = new Apple("red");
+        Apple a3=new Apple("green");
+        //hashMap stores apple type and its quantity
+        HashMap<Apple, Integer> m = new HashMap<Apple, Integer>();
+        m.put(a1, 10);//hashmap的get和put判断对象相等和位置 e.hash == hash && ((k = e.key) == key || key.equals(k))
+        m.put(a2, 20);
+        System.out.println(m.get(a3));//return null
+    }
+}
+```
+上面的代码执行过程中，先是创建个两个Apple，一个green apple和一个red apple，然后将这来两个apple存储在map中，存储之后再试图通过map的get
+方法获取到其中green apple的实例。读者可以试着执行以上代码，数据结果为null。也就是说刚刚通过put方法放到map中的green apple并没有通过get
+方法获取到。你可能怀疑是不是green apple并没有被成功的保存到map中，但是，通过debug工具可以看到，它已经被保存成功了。
+
+上述代码中a1的hashcode和a3的hashcode不相等，所以a1 put进hashmap的table[index]位置不相等，因此get(a3)时候，get不到。
+
+
+### 两个对象a1,a2，如果这两个对象的hashcode一样，equals不一样被put和get发生什么事？
+**本质上就是：简单理解就是两个不同的对象，发生了hashcode冲突而已，可以正常put和get。**
+```java_holder_method_tree
+e.hash == hash && ((k = e.key) == key || key.equals(k)) hashmpa中最重要代码
+//这里e.hash==hash是提前校验，性能损耗远小于equals方法。hashcode不相等，equals一定不相等，hashcode相等的话，才进一步去检查equals
+```
+**put时候**：hashcode一样 => table[index]所在的数组下标索引一样，a1被放在table[index]位置，之后a2定位到table[index]对应的链表，
+循环遍历链表，但是a2.equals(a1) = false，所以头插法加入到table[index]位置。
+
+**get时候**：get(a1) =》定位table[index] 循环遍历链表，a1.hash=Node(a1.hash)&& a1.equals(Node a1)，因此正常取出来了。a2同样道理。
+
+
+### 两个作为hashmap的key的对象，如果这两个对象的equals一样，hashcode不一样被put到hashmap发生什么事？
+
+就是上面的Apple例子，第一个green绿色的apple放进put后，用第二个的green绿色的apple取不出来。
+
+
+
 ## 面试题
+1. 如何让hashmap变得线程安全。
+方法一、不让hashmap扩容（扩容条件：(size >= threshold) 如果知道hashmap中最多存放多少元素，比如32个，可以初始化hashmap时候，指定size和加载因子）
+方法二、使用hashtable
+方法三、ConcurrentHashMap
+方法四、Collections.synchronizedMap(hashmap)
+
 HashMap的哈希算法是怎么实现的，为什么要这样实现
 为什么链表长度超过8才升级成红黑树，直接用红黑树合适吗？
-## [美团技术点评hashmap1.8](https://www.cnblogs.com/xiarongjin/p/8310691.html)
 
+链表转红黑树的阈值为什么是8
 
+1.8 中为什么要用红黑树？而不用完全平衡二叉树？不用b树？（也就是三种树的区别）
+## 资料
+
+https://snailclimb.gitee.io/javaguide/#/docs/java/collection/HashMap(JDK1.8)%E6%BA%90%E7%A0%81+%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90?id=hashmap-%e7%ae%80%e4%bb%8b
+
+[美团技术点评hashmap1.8](https://www.cnblogs.com/xiarongjin/p/8310691.html)
+
+[HashMap面试专题](https://www.nowcoder.com/discuss/481759?type=post&order=time&pos=&page=1&channel=1009&source_id=search_post)
+
+[b站hashmap和currenthashmap视频](https://www.bilibili.com/video/BV1x741117jq?p=1)
